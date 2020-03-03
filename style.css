@@ -1,0 +1,32 @@
+body {
+    background-color: pink;
+}
+
+#result {
+    background-color: lightblue;
+    display: flex;
+}
+
+#companies {
+    background-color: lightyellow;
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result--item {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.companies--item {
+    text-align: center;
+    font-size: 18px;
+}
+
+#incomes {
+    background-color: orange;
+}
