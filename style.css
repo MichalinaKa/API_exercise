@@ -25,6 +25,7 @@ body {
 .companies--item {
     text-align: center;
     font-size: 18px;
+    border: 1px  black;
 }
 
 #incomes {
