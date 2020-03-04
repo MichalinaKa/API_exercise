@@ -2,14 +2,9 @@ body {
     background-color: pink;
 }
 
-#result {
-    background-color: lightblue;
-    display: flex;
-}
-
-#companies {
+#companies, .companies {
     background-color: lightyellow;
-    flex-basis: 50%;
+    flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -26,8 +21,4 @@ body {
     text-align: center;
     font-size: 18px;
     border: 1px  black;
-}
-
-#incomes {
-    background-color: orange;
 }

@@ -28,13 +28,21 @@
 // };
 
 
-// let data = [];
+let allData = [];
+let comapanyId = [];
+let comapanyName = [];
+let companyCity = [];
 fetch('https://recruitment.hal.skygate.io/companies')
     .then(response => {
         return response.json();
     })
     .then(data => {
         console.log(data.length);
+        allData = data;
+        // companyId = data + id;
+        // companyName = data.name;
+        // companyCity = data.city;
+        // console.log(companyId)
 
         let display =
             data.forEach((item, index) => {
@@ -44,7 +52,33 @@ fetch('https://recruitment.hal.skygate.io/companies')
                         return response.json();
                     })
                     .then(data2 => {
-                        console.log(data2);
+                        // console.log(data2);
+                        const arrayOfValues = data2.incomes.map(v => v.value);
+                        const totalIncome = arrayOfValues.reduce((a, b) => Number(a) + Number(b));
+                        sumTotalIncome = totalIncome.toFixed(2);
+                        console.log(sumTotalIncome);
+
+                        let html = '';
+                        data.forEach(company => {
+                            html += `
+                <div class="result--item">
+                    <div class="companies--item">${company.id}</div>
+                    <div class="companies--item">${totalIncome}</div>
+                    <div class="companies--item">${company.name}</div>
+                    <div class="companies--item">${company.city}</div>
+                </div>
+                `;
+
+                        });
+                        document.getElementById('companies').innerHTML = html;
+                        // let sortedIncome = sumTotalIncome.min();
+                        // console.log(sortedIncome)
+
+
+                        // for (let i = 0; i < data2.incomes.length; i++) {
+                        //     suma = suma + data2.incomes[i];
+                        // }
+                        // console.log('Suma elementów w tablicy wynosi: ' + suma);
                     })
                 // let sumIncomes = function
 
