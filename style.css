@@ -1,20 +1,26 @@
 body {
-    background-color: pink;
+    box-sizing: border-box;
+    /* background-color: rgb(245, 227, 230); */
 }
 
 #companies, .companies {
-    background-color: lightyellow;
+    /* background-color: lightyelow; */
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.result--item {
+
+.container{
+    display: grid;
+    grid-template-columns: 5% 30% 20% 30% 15%;
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+margin: 0 auto;
+    width: 80%;
     border: 1px solid black;
+}
+.container__headers {
+    background-color: rgb(201, 190, 190);
 }
 
 .companies--item {
@@ -22,3 +28,15 @@ body {
     font-size: 18px;
     border: 1px  black;
 }
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 18px;
+}
+h2{
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
