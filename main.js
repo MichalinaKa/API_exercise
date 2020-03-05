@@ -9,8 +9,6 @@ fetch('https://recruitment.hal.skygate.io/companies')
         allData = data;
         // console.log(typeof allData);
 
-
-
         let display =
             data.forEach((item, index) => {
                 // console.log(`Nr.${index}  ID firmy: ${item.id}, NAZWA FIRMY: ${item.name} PROWADZONA W:  ${item.city} `);
@@ -34,15 +32,15 @@ fetch('https://recruitment.hal.skygate.io/companies')
                         const arrayOfDate = data2.incomes.map(v => ({ [v.value]: v.date })).reduce((a, b) => Object.assign(a, b), {});
                         // console.log(arrayOfDate);
 
-                        let html = `<div class="container container__headers"><h2 class="container--item">id</h2> <h2 class="container--item">company name</h2><h2 class="container--item">total income</h2><h2 class="container--item">city</h2><h2 class="container--item">average income</h2></div>`;
+                        let html = `<div class="container container__headers"><h2 class="container--item blue">id</h2> <h2 class="container--item orange">company name</h2><h2 class="container--item pink">total income</h2><h2 class="container--item green">city</h2><h2 class="container--item coral">average income</h2></div>`;
                         data.forEach(company => {
                             html += `
                         <div class="container">
-                            <div class="companies--item">${company.id}</div><div class="companies--item">${company.name}</div>
-                            <div class="companies--item">${sumTotalIncome}</div>
+                            <div class="container--item blue">${company.id}</div><div class="container--item orange">${company.name}</div>
+                            <div class="container--item pink">${sumTotalIncome} </div>
                             
-                            <div class="companies--item">${company.city}</div>
-                            <div class="companies--item">${incomeAverage}</div>
+                            <div class="container--item green">${company.city}</div>
+                            <div class="container--item coral">${incomeAverage}</div>
                         </div>
                         `;
 

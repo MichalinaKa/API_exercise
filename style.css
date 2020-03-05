@@ -1,42 +1,108 @@
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
+
     /* background-color: rgb(245, 227, 230); */
 }
 
-#companies, .companies {
-    /* background-color: lightyelow; */
-    flex-basis: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-.container{
+.container {
     display: grid;
     grid-template-columns: 5% 30% 20% 30% 15%;
     padding: 10px;
-margin: 0 auto;
+    margin: 0 auto;
     width: 80%;
-    border: 1px solid black;
-}
-.container__headers {
-    background-color: rgb(201, 190, 190);
+    border: 3px solid white;
+    background-color: rgb(73, 121, 121);
 }
 
-.companies--item {
+.container__headers {
+    background-color: rgb(101, 97, 102);
+}
+
+.container--item {
     text-align: center;
     font-size: 18px;
-    border: 1px  black;
+    border: 1px rgb(105, 91, 91);
+    padding: 5px;
 }
-h1 {
+
+h1, h2 {
     text-align: center;
     text-transform: uppercase;
     padding: 18px;
 }
-h2{
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
+
+.blue {
+    color: rgb(178, 223, 241);
 }
-/* display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+
+.orange {
+    color: rgb(243, 217, 170);
+}
+
+.pink {
+    color: rgb(250, 206, 213);
+}
+
+.green {
+    color: rgb(179, 233, 179);
+}
+
+.coral {
+    color: rgb(250, 172, 143);
+}
+
+@media (max-width: 920px) {
+    .container {
+        width: 90%;
+        grid-template-columns: 5% 40% 10% 30% 15%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        display: block;
+        background-color: white;
+    }
+
+    .blue, .orange, .pink, .green, .coral {
+        color: black;
+    }
+
+    .blue {
+        background-color: rgb(178, 223, 241);
+    }
+
+    .orange {
+        background-color: rgb(243, 217, 170);
+    }
+
+    .pink {
+        background-color: rgb(250, 206, 213);
+    }
+
+    .green {
+        background-color: rgb(179, 233, 179);
+    }
+
+    .coral {
+        background-color: rgb(250, 172, 143);
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        padding: 0;
+        font-size: 20px;
+    }
+}
