@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-##Project made like a recrutation task for junior JS position.
+
+## Project made like a recrutation task for junior JS position.
 
 ### used technologies: 
 #### html, css, js(ES6)
