@@ -12,17 +12,17 @@ body {
     margin: 0 auto;
     width: 80%;
     border: 3px solid white;
-    background-color: rgb(73, 121, 121);
+    background-color: rgb(217, 238, 238);
 }
 
 .container__headers {
-    background-color: rgb(101, 97, 102);
+    background-color: rgb(229, 224, 230);
 }
 
 .container--item {
     text-align: center;
     font-size: 18px;
-    border: 1px rgb(105, 91, 91);
+    border: 1px rgb(187, 174, 174);
     padding: 5px;
 }
 
@@ -33,23 +33,23 @@ h1, h2 {
 }
 
 .blue {
-    color: rgb(178, 223, 241);
+    color: rgb(43, 67, 77);
 }
 
 .orange {
-    color: rgb(243, 217, 170);
+    color: rgb(148, 97, 1);
 }
 
 .pink {
-    color: rgb(250, 206, 213);
+    color: rgb(175, 18, 123);
 }
 
 .green {
-    color: rgb(179, 233, 179);
+    color: rgb(10, 70, 10);
 }
 
 .coral {
-    color: rgb(250, 172, 143);
+    color: rgb(179, 52, 6);
 }
 
 @media (max-width: 920px) {
@@ -78,23 +78,23 @@ h1, h2 {
     }
 
     .blue {
-        background-color: rgb(178, 223, 241);
+        background-color: rgb(209, 233, 243);
     }
 
     .orange {
-        background-color: rgb(243, 217, 170);
+        background-color: rgb(255, 251, 226);
     }
 
     .pink {
-        background-color: rgb(250, 206, 213);
+        background-color: rgb(238, 215, 219);
     }
 
     .green {
-        background-color: rgb(179, 233, 179);
+        background-color: rgb(185, 226, 185);
     }
 
     .coral {
-        background-color: rgb(250, 172, 143);
+        background-color: rgb(245, 215, 205);
     }
 
     h1 {
